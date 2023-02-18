@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "97de1955-eed9-4765-87d7-4a1b6d3d0095",
+		"name": "dogs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dog/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Персик\",\r\n        \"is_stripe\": true,\r\n        \"color\": \"Orange\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/cat/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"dog",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/cats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"dogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dog/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/cat/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"dog",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dog/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/cat/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"dog",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dog/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n      \"name\": \"Персик2\",\r\n        \"is_stripe\": true,\r\n        \"color\": \"Orange\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/cat/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"dog",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
